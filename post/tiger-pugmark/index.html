@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tiger Pugmark / Pugmark is the term used to refer to the footprint of most animals (especially megafauna). - Lauras</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="These are the matlab codes to find 9 features from tiger pug marks using image processing, which can distinguish different tigers we have collected images of tiger.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Lauras" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Lauras</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Tiger Pugmark / Pugmark is the term used to refer to the footprint of most animals (especially megafauna).</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<section>
+    <aside>
+        <a href="https://www.thestatesman.com/wp-content/uploads/2020/01/QT-Tiger-pugmark.jpg"><img alt="Forest Officials Confirm Tiger Pugmarks In Bankura The pugmark safari is a tour company that organises jungle safari in jim corbett national park and also provide quality service." src="https://www.thestatesman.com/wp-content/uploads/2020/01/QT-Tiger-pugmark.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxxiSh7FHAJmspBSpZgs12wvE9B4diBa6CA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x800 - Fresh pugmarks of the tiger have been detected and indicate it has moved towards penchikalpet range we are awaiting photographs from camera traps and more pugmarks to track its movement. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x800</li> 
+    <mark>Forest Officials Confirm Tiger Pugmarks In Bankura </mark> See more of the tiger&#039;s pugmark resort on facebook.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://c8.alamy.com/comp/DC9KYR/tiger-pugmark-in-bardia-national-park-nepal-DC9KYR.jpg"><img alt="Tiger Pugmark In Bardia National Park Nepal Stock Photo Alamy Response from sanjay c, owner at the pugmark safari and tours." src="https://c8.alamy.com/comp/DC9KYR/tiger-pugmark-in-bardia-national-park-nepal-DC9KYR.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>956x1390 - Pug means foot in hindi (sanskrit पद् pad; </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 956x1390</li> 
+    <mark>Tiger Pugmark In Bardia National Park Nepal Stock Photo Alamy </mark> These are the matlab codes to find 9 features from tiger pug marks using image processing, which can distinguish different tigers we have collected images of tiger.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/Wh7G3dpIahI/maxresdefault.jpg"><img alt="How To Identify Leopard Pugmarks Easy Guide Youtube Every individual animal species has a distinct pugmark and as such this is used for identification." src="https://i.ytimg.com/vi/Wh7G3dpIahI/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5m9Ddiag-47cdz4NV2UayNrQPKK00eGUKlg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Pooclally a large the wor. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>How To Identify Leopard Pugmarks Easy Guide Youtube </mark> «tiger pugmark #tiger #tigers #animal #animals #animalplanet #cat #bigcat #paw #paws #pugmark…»
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://photos.travelblog.net/2461/130374/f/966722-tiger-pugmark-0.jpg"><img alt="Tiger Pugmark Photo Information to be extracted from pugmarks is their 4." src="https://photos.travelblog.net/2461/130374/f/966722-tiger-pugmark-0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6F3yt9GyVTn1DuOTCVzoZ4pXamYc2nuZNHA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>600x450 - The tigers pugmark resort is situated south of belparao, close to kichri canal. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 600x450</li> 
+    <mark>Tiger Pugmark Photo </mark> These are the matlab codes to find 9 features from tiger pug marks using image processing, which can distinguish different tigers we have collected images of tiger.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Aarti%20Kapur%20Singh,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1532790306/sp8lfsun1ococxi7bgnt.jpg"><img alt="Tiger Pug Mark License Download Or Print For 11 16 Photos Picfair The pugmark safari is a tour company that organises jungle safari in jim corbett national park and also provide quality service." src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Aarti%20Kapur%20Singh,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1532790306/sp8lfsun1ococxi7bgnt.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>1120x747 - See more of the tiger&#039;s pugmark resort on facebook. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1120x747</li> 
+    <mark>Tiger Pug Mark License Download Or Print For 11 16 Photos Picfair </mark> The tiger&#039;s pugmark resort, ramnagar, uttarakhand.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://media-cdn.tripadvisor.com/media/photo-s/07/c3/de/1a/the-ranger-s-lodge-imran.jpg"><img alt="Tiger Pug Mark Near Our Stay Bild Von The Ranger S Lodge Imran S Jungle Home In Corbett Ramnagar Tripadvisor These are the matlab codes to find 9 features from tiger pug marks using image processing, which can distinguish different tigers we have collected images of tiger." src="https://media-cdn.tripadvisor.com/media/photo-s/07/c3/de/1a/the-ranger-s-lodge-imran.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5oxI_SPvPKmMD0LZWI-E2H-NLe9kJCgp_vg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>550x367 - «tiger pugmark #tiger #tigers #animal #animals #animalplanet #cat #bigcat #paw #paws #pugmark…» </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 550x367</li> 
+    <mark>Tiger Pug Mark Near Our Stay Bild Von The Ranger S Lodge Imran S Jungle Home In Corbett Ramnagar Tripadvisor </mark> This paper proposed an algorithm for identification of tigers through their pugmarks.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://www.conservationindia.org/wp-content/files_mf/1299267599pug.jpg"><img alt="Why The Pugmark Census Used To Monitor Tiger Populations Failed Conservation India Forest guard can identify pugmarks of several tigers by inspecting visually." src="http://www.conservationindia.org/wp-content/files_mf/1299267599pug.jpg" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/ynWCCufa6jjxTmSqWtM_lUtuOwq0NpOBXOmEkUFCLtpa8oVQ9zysmit5jjp2EFj2nYnq8VEVGC5-bz1dHAz-9VKG31N0bqdo6jGgrXbSYaYdL6Au7mGnZpS3qOS3jA';"></a>
+		
+		<p style="text-align: center;"><b>650x471 - Pug means foot in hindi (sanskrit पद् pad; </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 650x471</li> 
+    <mark>Why The Pugmark Census Used To Monitor Tiger Populations Failed Conservation India </mark> Every individual animal species has a distinct pugmark and as such this is used for identification.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://thumbs.dreamstime.com/z/tiger-pugmarks-track-national-park-tiger-reserve-india-tiger-pugmark-track-national-park-135201155.jpg"><img alt="Tiger Pugmark On The Track Of National Park Stock Image Image Of Reserve Landscape 135201155 This paw print grow to 8 to 10 450 to 500 lbs." src="https://thumbs.dreamstime.com/z/tiger-pugmarks-track-national-park-tiger-reserve-india-tiger-pugmark-track-national-park-135201155.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>1600x1156 - Pobierz to zdjęcie tiger pugmark w nepalu teraz. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1600x1156</li> 
+    <mark>Tiger Pugmark On The Track Of National Park Stock Image Image Of Reserve Landscape 135201155 </mark> This paw print grow to 8 to 10 450 to 500 lbs.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://s3.amazonaws.com/aphs.worldnomads.com/alphashooter/30632/5___The_Pugmark_1.jpg"><img alt="Pugmark A Fresh Tiger Pug Mark In The Mud Raises The Anticipation Levels My Photo Scholarship 2011 Entry Worldwide Worldnomads Com We evaluated gender discrimination of tigers (panthera tigris) using the shape of their pugmarks." src="https://s3.amazonaws.com/aphs.worldnomads.com/alphashooter/30632/5___The_Pugmark_1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMkyW_gaW1SBz17iUAaE3P2hN_F56CY5hRg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>520x346 - When you say each object in the image, should each pugmark be considered one object, or should each toe be considered separate objects? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 520x346</li> 
+    <mark>Pugmark A Fresh Tiger Pug Mark In The Mud Raises The Anticipation Levels My Photo Scholarship 2011 Entry Worldwide Worldnomads Com </mark> It is registered at registrar of companies, jaipur.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://openthemagazine.com/wp-content/uploads/2015/11/pugs.jpg"><img alt="Sex Lies And Pugmarks Open The Magazine The tigers pugmark resort is a resort in uttarakhand." src="https://openthemagazine.com/wp-content/uploads/2015/11/pugs.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPazSPZEjAy3vgO2STtE3PS196eUw2fb2yFw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>435x290 - Eliminating regions with low pixel density using bwareaopen is not working for the image 1. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 435x290</li> 
+    <mark>Sex Lies And Pugmarks Open The Magazine </mark> It is registered at registrar of companies, jaipur.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://sites.google.com/site/wildlifesanctuaryorg/_/rsrc/1259488924689/tiger-census-2010/Carnivor%20Pugmarks.jpg"><img alt="Tiger Census 2010 Tiger Census Made Easy Workshop On Tiger Census 2010 Pl Download Take A Print Of The 1 Field Guide Tiger Census 2010 2 Tiger Status Report 2007 3 Tiger Census Ppt 4 Project Tiger Guidelines Attached At Bottom Of This A tiger pugmark is your." src="https://sites.google.com/site/wildlifesanctuaryorg/_/rsrc/1259488924689/tiger-census-2010/Carnivor%20Pugmarks.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCScm7SJXiz8EvzM8pY_UnItWPQ9M2uMG45Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>371x550 - But they are not accurate. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 371x550</li> 
+    <mark>Tiger Census 2010 Tiger Census Made Easy Workshop On Tiger Census 2010 Pl Download Take A Print Of The 1 Field Guide Tiger Census 2010 2 Tiger Status Report 2007 3 Tiger Census Ppt 4 Project Tiger Guidelines Attached At Bottom Of This </mark> .отслеживание, марк, лапа, природа, давление, следы, следуйте, отливка, тайна, тигр, отступ, кот, текстура, круг, животное, spore, мопс, дикая природа, pugmark, индия.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.pngitem.com/pimgs/m/64-641888_pugmark-clip-art-at-transparent-tiger-pugmark-clipart.png"><img alt="Pugmark Clip Art At Transparent Tiger Pugmark Clipart Hd Png Download Transparent Png Image Pngitem 503 likes · 12 talking about this · 659 were here." src="https://www.pngitem.com/pimgs/m/64-641888_pugmark-clip-art-at-transparent-tiger-pugmark-clipart.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUlPVyeUJNhhA3wdlJJ5NC_rtywFWiPIREA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>860x678 - Forest guard can identify pugmarks of several tigers by inspecting visually. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 860x678</li> 
+    <mark>Pugmark Clip Art At Transparent Tiger Pugmark Clipart Hd Png Download Transparent Png Image Pngitem </mark> The tigers pugmark resort is situated south of belparao, close to kichri canal.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://openthemagazine.com/wp-content/uploads/2011/02/paws.jpg"><img alt="Sex Lies And Pugmarks Open The Magazine These are the matlab codes to find 9 features from tiger pug marks using image processing, which can distinguish different tigers we have collected images of tiger." src="https://openthemagazine.com/wp-content/uploads/2011/02/paws.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKAp1a8PkEj0QZRZiuaAGcCHB5Fg-OgL3iLA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>435x290 - This paw print grow to 8 to 10 450 to 500 lbs. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 435x290</li> 
+    <mark>Sex Lies And Pugmarks Open The Magazine </mark> Every individual animal species has a distinct pugmark and as such this is used for identification.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20madhu400,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1412420705/igdf0fhulwikjx12jwzx.jpg"><img alt="Tiger Pug Mark License Download Or Print For 3 72 Photos Picfair Dudhwa tigerhino resort, palia resim:" src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20madhu400,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1412420705/igdf0fhulwikjx12jwzx.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>1120x1680 - But they are not accurate. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1120x1680</li> 
+    <mark>Tiger Pug Mark License Download Or Print For 3 72 Photos Picfair </mark> We evaluated gender discrimination of tigers (panthera tigris) using the shape of their pugmarks.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://c8.alamy.com/comp/AGG3MX/india-kanha-national-park-tiger-pugmark-tiger-footprint-in-sand-AGG3MX.jpg"><img alt="Tiger Pugmark High Resolution Stock Photography And Images Alamy Pugmark is the term used to refer to the footprint of most animals." src="https://c8.alamy.com/comp/AGG3MX/india-kanha-national-park-tiger-pugmark-tiger-footprint-in-sand-AGG3MX.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>1300x956 - Pug means foot in hindi (sanskrit पद् pad; </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1300x956</li> 
+    <mark>Tiger Pugmark High Resolution Stock Photography And Images Alamy </mark> The importance of preserving and protecting tigers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://wildtrails.in/wp-content/uploads/2016/03/male-female-tiger-pugmarks2-1024x758.jpg"><img alt="On A Jungle Safari Learn To Recognize The Tiger Pugmarks Wildtrails Of India When you say each object in the image, should each pugmark be considered one object, or should each toe be considered separate objects?" src="http://wildtrails.in/wp-content/uploads/2016/03/male-female-tiger-pugmarks2-1024x758.jpg" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/q5xsyyuxmjUiGnSPlwp4deSUFrez_1ZiqmXMlqYCFI59Lfh7mYAm19Gzgi6b28DGLsplYZWzSmKGZ9tibbqpnnnYTBMAR8_ApGJWQnoKyt6n2qDpn1Q5PQjISSYKvIM_-nDKNx9UN4fCgAr04kSv3w';"></a>
+		
+		<p style="text-align: center;"><b>1024x758 - Pugmarks of a royal bengal tiger have been found in the snow at an altitude of 10,000 feet in the himalayas near jelepla in eastern sikkim after a gap of nearly 18 years, officials said. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1024x758</li> 
+    <mark>On A Jungle Safari Learn To Recognize The Tiger Pugmarks Wildtrails Of India </mark> This paw print grow to 8 to 10 450 to 500 lbs.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/4/49/Fresh_tiger_pugmarks.jpg"><img alt="File Fresh Tiger Pugmarks Jpg Wikimedia Commons Pugmark is the term used to refer to the footprint of most animals (especially megafauna)." src="https://upload.wikimedia.org/wikipedia/commons/4/49/Fresh_tiger_pugmarks.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>4000x3000 - See more of the tiger&#039;s pugmark resort on facebook. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 4000x3000</li> 
+    <mark>File Fresh Tiger Pugmarks Jpg Wikimedia Commons </mark> By extracting the high pixel density regions i will get the pugmark area minus the background.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://wildtrails.in/wp-content/uploads/2016/03/tigerpug-frontversushind.png"><img alt="On A Jungle Safari Learn To Recognize The Tiger Pugmarks Wildtrails Of India Szukaj więcej w bibliotece wolnych od tantiem zdjęć stockowych istock, obejmującej zdjęcia azja, które można łatwo i szybko pobrać." src="http://wildtrails.in/wp-content/uploads/2016/03/tigerpug-frontversushind.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/IXxYTccyxBNQVDdFbi57R1Bkm58b0xkg5Mdp0AdLBbhgKfkXRhvpIUOupcT6H6_vPQpL3W5a0vrgbmTaWhzgRezZTiJ6zxdo25oWO-Xb6y0kpoAiVuR_0BNOO-BhB8vH1D5biQ';"></a>
+		
+		<p style="text-align: center;"><b>928x426 - Pugmarks of a royal bengal tiger have been found in the snow at an altitude of 10,000 feet in the himalayas near jelepla in eastern sikkim after a gap of nearly 18 years, officials said. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 928x426</li> 
+    <mark>On A Jungle Safari Learn To Recognize The Tiger Pugmarks Wildtrails Of India </mark> Every individual animal species has a distinct pugmark and as such this is used for identification.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://cdn.shopify.com/s/files/1/2152/4371/products/CO4A0701_600x600.jpg?v=1589872110"><img alt="Tiger Pugmark Rubber Key Chain Temple Tree Designs It is registered at registrar of companies, jaipur." src="http://cdn.shopify.com/s/files/1/2152/4371/products/CO4A0701_600x600.jpg?v=1589872110" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/u5AK8fVscBps7-LddFR6P6oSZbHfPBKoBr7gGz6SgLTi8chfz8Eu1kx0_1iOYbA3HqcBBTMnJ1VaaRQxwZUyLOvdaPCxuybp_YpemCVJqQslbhJCigTPhv1FnQvd1m3fynzydoj8vrmfE5cgIw';"></a>
+		
+		<p style="text-align: center;"><b>480x480 - Meanwhile, tiger attack was reported from the vellikkulangara area in the district a few days ago. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 480x480</li> 
+    <mark>Tiger Pugmark Rubber Key Chain Temple Tree Designs </mark> The tigers pugmark resort is situated south of belparao, close to kichri canal.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i2.wp.com/localfeedback.org/wp-content/uploads/2018/05/A1-feature-image-pugmark-hand-jim-corbett-article-one.jpg?fit=600%2C338&amp;ssl=1"><img alt="Tiger Pugmarks Jim Corbett Archives Local Feedback Eliminating regions with low pixel density using bwareaopen is not working for the image 1." src="https://i2.wp.com/localfeedback.org/wp-content/uploads/2018/05/A1-feature-image-pugmark-hand-jim-corbett-article-one.jpg?fit=600%2C338&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLX6teFMHo3jkkcISLatYAPxoMUl-2e3BRLg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>600x338 - Its total obligation of contribution is rs. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 600x338</li> 
+    <mark>Tiger Pugmarks Jim Corbett Archives Local Feedback </mark> «tiger pugmark #tiger #tigers #animal #animals #animalplanet #cat #bigcat #paw #paws #pugmark…»
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.eurekalert.org/multimedia/pub/web/27357_web.jpg"><img alt="Tiger Pugmark Image Eurekalert Science News Every individual animal species has a distinct pugmark and as such this is used for identification." src="https://www.eurekalert.org/multimedia/pub/web/27357_web.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFW6exG-4fyxiLypq4gezpqUZbUx0zQ8wYcQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>400x533 - Meanwhile, tiger attack was reported from the vellikkulangara area in the district a few days ago. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 400x533</li> 
+    <mark>Tiger Pugmark Image Eurekalert Science News </mark> The pugmark safari is a tour company that organises jungle safari in jim corbett national park and also provide quality service.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://media-cdn.tripadvisor.com/media/photo-s/03/8c/27/18/kanha-jungle-lodge.jpg"><img alt="Tiger Pugmark Picture Of Kanha Jungle Lodge Kanha National Park Tripadvisor The pugmark safari is a tour company that organises jungle safari in jim corbett national park and also provide quality service." src="https://media-cdn.tripadvisor.com/media/photo-s/03/8c/27/18/kanha-jungle-lodge.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY-JT9mj8BdLrvRj9cyPMSuze-64tkBxIIFg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>550x366 - «tiger pugmark #tiger #tigers #animal #animals #animalplanet #cat #bigcat #paw #paws #pugmark…» </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 550x366</li> 
+    <mark>Tiger Pugmark Picture Of Kanha Jungle Lodge Kanha National Park Tripadvisor </mark> The tigers pugmark resort is a resort in uttarakhand.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://companyoftwo.in/clients/WT/wp-content/uploads/2016/03/Tiger-Pugmark-image.jpg"><img alt="On A Jungle Safari Learn To Recognize The Tiger Pugmarks Wildtrails Of India The tigers pugmark resort is a resort in uttarakhand." src="https://companyoftwo.in/clients/WT/wp-content/uploads/2016/03/Tiger-Pugmark-image.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfYdnv1N-FZZOQJO9Y_hbdYUz8cSeJR0wHKA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>630x420 - Pugmarks of a royal bengal tiger have been found in the snow at an altitude of 10,000 feet in the himalayas near jelepla in eastern sikkim after a gap of nearly 18 years, officials said. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 630x420</li> 
+    <mark>On A Jungle Safari Learn To Recognize The Tiger Pugmarks Wildtrails Of India </mark> The pugmark safari is a tour company that organises jungle safari in jim corbett national park and also provide quality service.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://lauras.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/1-am-movie-review/">1 Am Movie Review / 2 days ago · movie review:</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/303-capsule-how-to-use/">303 Capsule How To Use : Cbd capsules or softgels are one of the easiest and most discreet methods of taking cbd.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/ahmedabad-mirror-e-newspaper-today/">Ahmedabad Mirror E Newspaper Today - Live news, investigations, opinion, photos and video by the journalists of the new york times from more than 150 countries around the world.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/ashish-kochar/">Ashish Kochar / Ashish kochar is a member of vimeo, the home for high quality videos and the people who love them.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bandra-station-to-bandstand-auto-fare/">Bandra Station To Bandstand Auto Fare / Arrives sun,tue,thu at jamnagar @ 14:35.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bed-mhpravesh-in-2019/">Bed Mhpravesh In 2019 / Sophisticated bioware would be well calculated and the antidote gives the leverage desired.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bipasha-basu-without-makeup/">Bipasha Basu Without Makeup / Bipasha basu beauty secrets ].</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cessed-building/">Cessed Building / Over 16,000 cessed buildings, which are in dilapidated condition, are on the verge of &amp;#039;death trap&amp;#039; in south mumbai.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/chitrangada-singh-hair-colour/">Chitrangada Singh Hair Colour : Always wondering on how to get celeb like flawless skin?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/dr-ranjan-shetty/">Dr Ranjan Shetty - Regarded as one of the best dermatologists in india, she has over 20 years of.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Lauras.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
